@@ -1,6 +1,6 @@
 -- grouping transactions of each cardholder
 CREATE VIEW transactions_by_cardholder AS
-	SELECT card_holder.id AS ch_id, card_holder.name, credit_card.card, transaction.id AS t_id, transaction.date, transaction.amount
+	SELECT card_holder.id AS ch_id, card_holder.name, credit_card.card, transaction.id AS t_id, transaction.date::date AS date, transaction.amount
 	FROM card_holder, transaction, credit_card
 	WHERE transaction.card = credit_card.card
 	AND credit_card.id_card_holder = card_holder.id
