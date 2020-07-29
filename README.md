@@ -62,7 +62,7 @@ Now that your data is prepared within the database, it's finally time to identif
 
   * If you answered yes to the previous question, explain why you think there might be fraudulent transactions during this time frame.
 
-* Some fraudsters hack a credit card by making several small payments (generally less than $2.00), which are typically ignored by cardholders. Count the transactions that are less than $2.00 per cardholder. Is there any evidence to suggest that a credit card has been hacked? Explain your rationale.
+* Some fraudsters hack a credit card by making several small payments (generally less than $\$$2.00), which are typically ignored by cardholders. Count the transactions that are less than $2.00 per cardholder. Is there any evidence to suggest that a credit card has been hacked? Explain your rationale.
 
 * What are the top five merchants prone to being hacked using small transactions?
 

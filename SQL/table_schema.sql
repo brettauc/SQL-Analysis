@@ -27,7 +27,7 @@ CREATE TABLE merchant(
 
 CREATE TABLE transaction(
 	id SERIAL,
-	date DATE,
+	date TIMESTAMP,
 	amount MONEY NOT NULL,
 	card VARCHAR(20),
 	id_merchant INT,
