@@ -105,9 +105,4 @@ Read the following articles on outliers detection, and then code a function usin
 * Create a Jupyter Notebook for the visual data analysis and the challenge.
 
 * Create and upload a repository with the above files to GitHub and post a link in BootCamp Spot.
-
-## Hint
-
-For comparing time and dates, take a look at the [date/time functions and operators](https://www.postgresql.org/docs/8.0/functions-datetime.html) in the PostgreSQL documentation.
-
 ---
