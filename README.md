@@ -1,56 +1,37 @@
-# SQL-Homework
+# SQL-Analysis
 # Looking for Suspicious Transactions
-
-![Credit card fraudster](Images/credit_card_fraudster.jpg)
-
-*[Credit Card Fraudster by Richard Patterson](https://www.flickr.com/photos/136770128@N07/42252105582/) | [Creative Commons Licensed](https://creativecommons.org/licenses/by/2.0/)*
 
 ## Background
 
-Fraud is everywhere these days—whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
+Apply SQL skills to analyze historical credit card transactions and consumption patterns in order to identify possible fraudulent transactions.
 
-In this homework assignment, you will apply your new SQL skills to analyze historical credit card transactions and consumption patterns in order to identify possible fraudulent transactions.
-
-You are asked to accomplish three main tasks:
+Three main tasks:
 
 1. [Data Modeling](#Data-Modeling):
-Define a database model to store the credit card transactions data and create a new PostgreSQL database using your model.
+Define a database model to store the credit card transactions data and create a new PostgreSQL database using the model.
 
-2. [Data Engineering](#Data-Engineering): Create a database schema on PostgreSQL and populate your database from the CSV files provided.
+2. [Data Engineering](#Data-Engineering): Create a database schema on PostgreSQL and populate the database from the CSV files provided.
 
 3. [Data Analysis](#Data-Analysis): Analyze the data to identify possible fraudulent transactions.
 
 ---
-
-## Files
-
-* [card_holder.csv](Data/card_holder.csv)
-* [credit_card.csv](Data/credit_card.csv)
-* [merchant_category.csv](Data/merchant_category.csv)
-* [merchant.csv](Data/merchant.csv)
-* [transaction.csv](Data/transaction.csv)
-
-## Instructions
-
 ### Data Modeling
 
 Create an entity relationship diagram (ERD) by inspecting the provided CSV files.
 
-**Note:** For the `credit_card` table, the `card` column should be a VARCHAR(20) datatype rather than an INT.
+Figure out how many tables to create, as well as what kind of relationships are needed to be defined among the tables.
 
-Part of the challenge here is to figure out how many tables you should create, as well as what kind of relationships you need to define among the tables.
-
-Feel free to discuss your database model design ideas with your classmates. You can use a tool like [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create your model.
+Use [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create the model.
 
 ### Data Engineering
 
-Using your database model as a blueprint, create a database schema for each of your tables and relationships. Remember to specify data types, primary keys, foreign keys, and any other constraints you defined.
+Using the previously created database model as a blueprint, create a database schema for each of the tables and relationships. Specify data types, primary keys, foreign keys, and any other defined constraints.
 
 After creating the database schema, import the data from the corresponding CSV files.
 
 ### Data Analysis
 
-Now that your data is prepared within the database, it's finally time to identify fraudulent transactions using SQL and Pandas DataFrames. In this part of the homework assignment, you will analyze the data and then create a report within a Jupyter Notebook file to present your findings. Your report should answer the following questions:
+Identify fraudulent transactions using SQL and Pandas DataFrames. Analyze the data and then create a report within a Jupyter Notebook file to present findings. THe report should answer the following questions:
 
 * How can you isolate (or group) the transactions of each cardholder?
 
@@ -68,7 +49,7 @@ Now that your data is prepared within the database, it's finally time to identif
 
 * Once you have a query that can be reused, create a view for each of the previous queries.
 
-Create a report for fraudulent transactions of some top customers of the firm. To achieve this task, perform a visual data analysis of fraudulent transactions using Pandas, Plotly Express, hvPlot, and SQLAlchemy to create the visualizations.
+Create a report for fraudulent transactions of some top customers of the firm. Perform a visual data analysis of fraudulent transactions using Pandas, Plotly Express, hvPlot, and SQLAlchemy to create the visualizations.
 
 * Verify if there are any fraudulent transactions in the history of two of the most important customers of the firm. For privacy reasons, you only know that their cardholders' IDs are 18 and 2.
 
@@ -76,25 +57,13 @@ Create a report for fraudulent transactions of some top customers of the firm. T
 
   * What difference do you observe between the consumption patterns? Does the difference suggest a fraudulent transaction? Explain your rationale.
 
-* The CEO of the firm's biggest customer suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay for several expensive restaurant bills. You are asked to find any anomalous transactions during that period.
+* The CEO of the firm's biggest customer suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay for several expensive restaurant bills. Find any anomalous transactions during that period.
 
   * Using Plotly Express, create a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
 
   * Do you notice any anomalies? Describe your observations and conclusions.
 
-## Challenge
-
-Another approach to identify fraudulent transactions is to look for outliers in the data. Standard deviation or quartiles are often used to detect outliers.
-
-Read the following articles on outliers detection, and then code a function using Python to identify anomalies for any cardholder.
-
-* [How to Calculate Outliers](https://www.wikihow.com/Calculate-Outliers)
-
-* [Removing Outliers Using Standard Deviation in Python](https://www.kdnuggets.com/2017/02/removing-outliers-standard-deviation-python.html)
-
-* [How to Use Statistics to Identify Outliers in Data](https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/)
-
-### Submission
+### Project Outputs
 
 * Create an image file of your ERD.
 
@@ -102,7 +71,6 @@ Read the following articles on outliers detection, and then code a function usin
 
 * Create a `.sql` file of your queries.
 
-* Create a Jupyter Notebook for the visual data analysis and the challenge.
+* Create a Jupyter Notebook for the visual data analysis.
 
-* Create and upload a repository with the above files to GitHub and post a link in BootCamp Spot.
 ---
