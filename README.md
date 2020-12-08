@@ -1,5 +1,4 @@
 # SQL-Analysis
-# Looking for Suspicious Transactions
 
 ## Background
 
